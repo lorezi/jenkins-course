@@ -13,6 +13,7 @@ job('NodeJS example') {
                          // Manage Jenkins -> Configure Tools -> NodeJS Installations -> Name
     }
     steps {
+        shell("export PATH=$PATH:/usr/local/bin")
         shell("npm install")
     }
 }
