@@ -1,7 +1,8 @@
 version: "3"
 services:
   jenkins:
-    image: jenkins/jenkins:lts
+    # image: jenkins/jenkins:lts
+    build: .
     privileged: true
     user: root
     ports:
