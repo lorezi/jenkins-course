@@ -2,9 +2,9 @@ node {
 
   // config 
   def to = emailextrecipients([
-          [$class: 'codebook.ng@gmail.com'],
-          [$class: 'codebook.ng@gmail.com'],
-          [$class: 'codebook.ng@gmail.com']
+          [$class: 'CulpritsRecipientProvider'],
+          [$class: 'DevelopersRecipientProvider'],
+          [$class: 'RequesterRecipientProvider']
   ])
 
   // job
